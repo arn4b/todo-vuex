@@ -37,6 +37,7 @@ export default createStore({
 
         COMPLETE_TODO(state, task){
         task.completed = !task.completed
+        console.log(task.completed, state.tasks)
         },
 
         CLEAR_TODO(state){
@@ -66,7 +67,8 @@ export default createStore({
 
     getters: {
         newTask: state => state.newTask,
-        tasks: state => state.tasks.filter((task) => {return  !task.completed}),},
+        tasks: state => state.tasks.filter((task) => {return  !task.completed}),
         completedTasks: state => state.tasks.filter((task) => {return task.completed})
+        }
     }
 )

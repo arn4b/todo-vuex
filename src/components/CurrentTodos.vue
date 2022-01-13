@@ -24,6 +24,7 @@
 
             complete(task) {
                 this.$store.dispatch('completeTodo', task)
+                console.log(this.$store.state.completed)
             },
 
             remove(task) {
