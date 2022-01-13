@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <GetTodo></GetTodo>
+  <CurrentTodos></CurrentTodos>
+  <CompletedTodos></CompletedTodos>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GetTodo from './components/GetTodo.vue'
+import CompletedTodos from './components/CompletedTodos.vue'
+import CurrentTodos from './components/CurrentTodos.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GetTodo, 
+    CompletedTodos,
+    CurrentTodos
   }
 }
 </script>
